@@ -43,16 +43,16 @@ void output_progress_msg_to_screen(Simulation_Run_Ptr this_simulation_run)
 
   if((sim_data->blip_counter >= BLIPRATE)
      ||
-     (sim_data->number_of_calls_processed >= RUNLENGTH))
+     (sim_data->number_of_packets_processed >= RUNLENGTH))
     {
       sim_data->blip_counter = 0;
 
       percentagedone =
-	100 * (double) sim_data->number_of_calls_processed/RUNLENGTH;
+	100 * (double) sim_data->number_of_packets_processed/RUNLENGTH;
 
       printf("%3.0f%% ", percentagedone);
 
-      printf("Call Count = %ld \r", sim_data->number_of_calls_processed);
+      printf("Call Count = %ld \r", sim_data->number_of_packets_processed);
 
       fflush(stdout);
     }
@@ -68,19 +68,21 @@ void output_results(Simulation_Run_Ptr this_simulation_run)
   sim_data = (Simulation_Run_Data_Ptr) simulation_run_data(this_simulation_run);
 
   printf("\n");
+  printf("packet loss is %ld \n", sim_data->blocked_packet_count/sim_data->packet_arrival_count);
+/* mean output data rate = number of packets processed divided by sim time */
 
+  printf("mean output data rate is %f packets/second \n",
+   (double) sim_data->number_of_packets_processed /
+    simulation_run_get_time(this_simulation_run));
   printf("random seed = %d \n", sim_data->random_seed);
-  printf("call arrival count = %ld \n", sim_data->call_arrival_count);
-  printf("blocked call count = %ld \n", sim_data->blocked_call_count);
+  // printf("call arrival count = %ld \n", sim_data->call_arrival_count);
+  // printf("blocked call count = %ld \n", sim_data->blocked_call_count);
 
-  xmtted_fraction = (double) (sim_data->call_arrival_count -
-      sim_data->blocked_call_count)/sim_data->call_arrival_count;
+  xmtted_fraction = (double) (sim_data->packet_arrival_count -
+      sim_data->blocked_packet_count)/sim_data->packet_arrival_count;
 
   printf("Blocking probability = %.5f (Service fraction = %.5f)\n",
 	 1-xmtted_fraction, xmtted_fraction);
 
   printf("\n");
 }
-
-
-

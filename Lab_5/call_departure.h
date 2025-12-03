@@ -37,10 +37,10 @@
  */
 
 void
-end_call_on_channel_event(Simulation_Run_Ptr ThisSimulation_Run, void*);
+end_packet_on_channel_event(Simulation_Run_Ptr ThisSimulation_Run, void*);
 
 long int
-schedule_end_call_on_channel_event(Simulation_Run_Ptr, double, void*);
+schedule_end_packet_on_channel_event(Simulation_Run_Ptr, double, void*);
 
 /*******************************************************************************/
 

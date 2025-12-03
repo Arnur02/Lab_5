@@ -41,6 +41,7 @@ int main(void)
 {
   int i;
   int j=0;
+  int k=0;
 
   Simulation_Run_Ptr simulation_run;
   Simulation_Run_Data data; /* Simulation_Run_Data is defined in main.h. */
@@ -50,59 +51,65 @@ int main(void)
    */
 
   unsigned RANDOM_SEEDS[] = {RANDOM_SEED_LIST, 0};
+  unsigned Q_Sizes[] = {Queue_Sizes, 0};
   unsigned random_seed;
+  unsigned Q_Size;
 
   /* 
    * Loop for each random number generator seed, doing a separate
    * simulation_run run for each.
    */
+  while (((random_seed = RANDOM_SEEDS[j++]) != 0)){
+    k = 0;
+    while ((Q_Size = Q_Sizes[k++]) != 0) {
+      printf("\n\nStarting simulation run with random seed %u and queue size %u...\n",
+       random_seed, Q_Size);
+      /* Create a new simulation_run. This gives a clock and eventlist. */
+      simulation_run = simulation_run_new();
 
-  while ((random_seed = RANDOM_SEEDS[j++]) != 0) {
+      /* Add our data definitions to the simulation_run. */
+      simulation_run_set_data(simulation_run, (void *) & data);
 
-    /* Create a new simulation_run. This gives a clock and eventlist. */
-    simulation_run = simulation_run_new();
+      /* Initialize our simulation_run data variables. */
+      data.blip_counter = 0;
+      data.packet_arrival_count = 0;
+      data.packets_processed = 0;
+      data.blocked_packet_count = 0;
+      data.number_of_packets_processed = 0;
+      // data.accumulated_call_time = 0.0;
+      data.random_seed = random_seed;
+      data.queue_size = Q_Size;
 
-    /* Add our data definitions to the simulation_run. */
-    simulation_run_set_data(simulation_run, (void *) & data);
+      /* Create the channels. */
+      data.channels = (Channel_Ptr *) xcalloc((int) 1,
+                sizeof(Channel_Ptr));
+      
+      data.bucket_queue = fifoqueue_new();
+      /* Initialize the channels. */
+      for (i=0; i<1; i++) {
+        *(data.channels+i) = server_new(); 
+      }
 
-    /* Initialize our simulation_run data variables. */
-    data.blip_counter = 0;
-    data.call_arrival_count = 0;
-    data.calls_processed = 0;
-    data.blocked_call_count = 0;
-    data.number_of_calls_processed = 0;
-    data.accumulated_call_time = 0.0;
-    data.random_seed = random_seed;
+      /* Set the random number generator seed. */
+      random_generator_initialize((unsigned) random_seed);
 
-    /* Create the channels. */
-    data.channels = (Channel_Ptr *) xcalloc((int) NUMBER_OF_CHANNELS,
-					    sizeof(Channel_Ptr));
+      /* Schedule the initial call arrival. */
+      schedule_packet_arrival_event(simulation_run,
+        simulation_run_get_time(simulation_run) +
+        exponential_generator((double) 1/Mean_Host_Output_Rate));
+      
+      /* Execute events until we are finished. */
+      while(data.number_of_packets_processed < RUNLENGTH) {
+        simulation_run_execute_event(simulation_run);
+      }
+      
+      /* Print out some results. */
+      output_results(simulation_run);
 
-    /* Initialize the channels. */
-    for (i=0; i<NUMBER_OF_CHANNELS; i++) {
-      *(data.channels+i) = server_new(); 
+      /* Clean up memory. */
+      cleanup(simulation_run);
     }
-
-    /* Set the random number generator seed. */
-    random_generator_initialize((unsigned) random_seed);
-
-    /* Schedule the initial call arrival. */
-    schedule_call_arrival_event(simulation_run,
-			simulation_run_get_time(simulation_run) +
-			exponential_generator((double) 1/Call_ARRIVALRATE));
-    
-    /* Execute events until we are finished. */
-    while(data.number_of_calls_processed < RUNLENGTH) {
-      simulation_run_execute_event(simulation_run);
-    }
-    
-    /* Print out some results. */
-    output_results(simulation_run);
-
-    /* Clean up memory. */
-    cleanup(simulation_run);
   }
-
   /* Pause before finishing. */
   getchar();
   return 0;

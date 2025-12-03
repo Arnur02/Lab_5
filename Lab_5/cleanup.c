@@ -40,7 +40,7 @@ void cleanup (Simulation_Run_Ptr this_simulation_run)
   sim_data = (Simulation_Run_Data_Ptr) simulation_run_data(this_simulation_run);
 
   /* Clean out the channels. */
-  for (i=0; i<NUMBER_OF_CHANNELS; i++) {
+  for (i=0; i<1; i++) {
     if( (*(sim_data->channels+i))->state == BUSY)
       xfree(server_get(*(sim_data->channels+i)));
   }
