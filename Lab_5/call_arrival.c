@@ -40,13 +40,13 @@
  */
 
 long int
-schedule_call_arrival_event(Simulation_Run_Ptr simulation_run, 
+schedule_packet_arrival_event(Simulation_Run_Ptr simulation_run, 
 			    double event_time)
 {
   Event new_event;
 
-  new_event.description = "Call Arrival";
-  new_event.function = call_arrival_event;
+  new_event.description = "Packet Arrival";
+  new_event.function = packet_arrival_event;
   new_event.attachment = NULL;
 
   return simulation_run_schedule_event(simulation_run, new_event, event_time);
@@ -59,9 +59,9 @@ schedule_call_arrival_event(Simulation_Run_Ptr simulation_run,
  */
 
 void
-call_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
+packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
 {
-  Call_Ptr new_call;
+  Packet_Ptr new_packet;
   Channel_Ptr free_channel;
   Simulation_Run_Data_Ptr sim_data;
   double now;
@@ -69,32 +69,38 @@ call_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
   now = simulation_run_get_time(simulation_run);
 
   sim_data = simulation_run_data(simulation_run);
-  sim_data->call_arrival_count++;
+  sim_data->packet_arrival_count++;
+  double service_time = sim_data->service_time;
 
   /* See if there is a free channel.*/
   if((free_channel = get_free_channel(simulation_run)) != NULL) {
 
     /* Yes, we found one. Allocate some memory and start the call. */
-    new_call = (Call_Ptr) xmalloc(sizeof(Call));
-    new_call->arrive_time = now;
-    new_call->call_duration = get_call_duration();
+    new_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
+    new_packet->arrive_time = now;
+    //new_packet->packet_duration = get_packet_duration();
 
     /* Place the call in the free channel and schedule its
        departure. */
-    server_put(free_channel, (void*) new_call);
-    new_call->channel = free_channel;
+    server_put(free_channel, (void*) new_packet);
+    new_packet->channel = free_channel;
 
-    schedule_end_call_on_channel_event(simulation_run,
-				       now + new_call->call_duration,
+    schedule_end_packet_on_channel_event(simulation_run,
+				       now + service_time,
 				       (void *) free_channel);
-  } else {
+  } else if(sim_data->bucket_queue->size < sim_data->queue_capacity) {
+    //new_packet->packet_duration = get_packet_duration(); 
+    new_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
+    new_packet->arrive_time = now;
+    fifoqueue_put(sim_data->bucket_queue, (void*) new_packet);
+  }else {
     /* No free channel was found. The call is blocked. */
-    sim_data->blocked_call_count++;
+    sim_data->blocked_packets_count++;
   }
 
   /* Schedule the next call arrival. */
-  schedule_call_arrival_event(simulation_run,
-	      now + exponential_generator((double) 1/Call_ARRIVALRATE));
+  schedule_packet_arrival_event(simulation_run,
+	      now + exponential_generator((double) 1/MEAN_HOST_OUTPUT_RATE));
 }
 
 /*******************************************************************************/
@@ -119,5 +125,4 @@ Channel_Ptr get_free_channel(Simulation_Run_Ptr simulation_run)
   }
   return (Channel_Ptr) NULL;
 }
-
 

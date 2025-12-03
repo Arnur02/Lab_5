@@ -41,7 +41,7 @@
  *
  */
 
-double get_call_duration(void);
+double get_packet_duration(void);
 
 /*******************************************************************************/
 

@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/run.dir/call_arrival.c.o -c /Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/call_arrival.c",
+  "file": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/call_arrival.c",
+  "output": "CMakeFiles/run.dir/call_arrival.c.o"
+},
+{
+  "directory": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/run.dir/call_departure.c.o -c /Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/call_departure.c",
+  "file": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/call_departure.c",
+  "output": "CMakeFiles/run.dir/call_departure.c.o"
+},
+{
+  "directory": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/run.dir/call_duration.c.o -c /Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/call_duration.c",
+  "file": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/call_duration.c",
+  "output": "CMakeFiles/run.dir/call_duration.c.o"
+},
+{
+  "directory": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/run.dir/cleanup.c.o -c /Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/cleanup.c",
+  "file": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/cleanup.c",
+  "output": "CMakeFiles/run.dir/cleanup.c.o"
+},
+{
+  "directory": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/run.dir/main.c.o -c /Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/main.c",
+  "file": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/main.c",
+  "output": "CMakeFiles/run.dir/main.c.o"
+},
+{
+  "directory": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/run.dir/output.c.o -c /Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/output.c",
+  "file": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/output.c",
+  "output": "CMakeFiles/run.dir/output.c.o"
+},
+{
+  "directory": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/build",
+  "command": "/usr/bin/clang -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk -o CMakeFiles/run.dir/simlib.c.o -c /Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/simlib.c",
+  "file": "/Users/arniken/McMaster/4DK4/Lab_5/Lab_5/Lab_5/simlib.c",
+  "output": "CMakeFiles/run.dir/simlib.c.o"
+}
+]

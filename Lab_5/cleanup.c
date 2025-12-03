@@ -46,9 +46,14 @@ void cleanup (Simulation_Run_Ptr this_simulation_run)
   }
   xfree(sim_data->channels);
 
+  /* Empty and free the queue to avoid leaking across parameter sweeps. */
+  while(fifoqueue_size(sim_data->bucket_queue) > 0) {
+    xfree(fifoqueue_get(sim_data->bucket_queue));
+  }
+  xfree(sim_data->bucket_queue);
+
   /* Clean up the simulation_run. */
   simulation_run_free_memory(this_simulation_run);
 }
-
 
 
