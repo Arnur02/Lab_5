@@ -54,7 +54,7 @@ int main(void)
   unsigned Q_Sizes[] = {Queue_Sizes, 0};
   unsigned random_seed;
   unsigned Q_Size;
-
+  
   /* 
    * Loop for each random number generator seed, doing a separate
    * simulation_run run for each.
@@ -96,7 +96,7 @@ int main(void)
       /* Schedule the initial call arrival. */
       schedule_packet_arrival_event(simulation_run,
         simulation_run_get_time(simulation_run) +
-        exponential_generator((double) 1/Mean_Host_Output_Rate));
+        exponential_generator((double) 1/(Mean_Host_Output_Rate)));
       
       /* Execute events until we are finished. */
       while(data.number_of_packets_processed < RUNLENGTH) {

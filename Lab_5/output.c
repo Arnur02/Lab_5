@@ -68,7 +68,7 @@ void output_results(Simulation_Run_Ptr this_simulation_run)
   sim_data = (Simulation_Run_Data_Ptr) simulation_run_data(this_simulation_run);
 
   printf("\n");
-  printf("packet loss is %ld \n", sim_data->blocked_packet_count/sim_data->packet_arrival_count);
+  printf("packet loss is %f \n", (double)sim_data->blocked_packet_count/(double)sim_data->packet_arrival_count);
 /* mean output data rate = number of packets processed divided by sim time */
 
   printf("mean output data rate is %f packets/second \n",
@@ -78,11 +78,11 @@ void output_results(Simulation_Run_Ptr this_simulation_run)
   // printf("call arrival count = %ld \n", sim_data->call_arrival_count);
   // printf("blocked call count = %ld \n", sim_data->blocked_call_count);
 
-  xmtted_fraction = (double) (sim_data->packet_arrival_count -
-      sim_data->blocked_packet_count)/sim_data->packet_arrival_count;
+  // xmtted_fraction = (double) (sim_data->packet_arrival_count -
+  //     sim_data->blocked_packet_count)/sim_data->packet_arrival_count;
 
-  printf("Blocking probability = %.5f (Service fraction = %.5f)\n",
-	 1-xmtted_fraction, xmtted_fraction);
+  // printf("Blocking probability = %.5f (Service fraction = %.5f)\n",
+	//  1-xmtted_fraction, xmtted_fraction);
 
   printf("\n");
 }

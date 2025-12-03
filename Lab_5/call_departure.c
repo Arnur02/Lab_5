@@ -95,7 +95,7 @@ end_packet_on_channel_event(Simulation_Run_Ptr simulation_run, void * c_ptr)
     server_put(channel, (void*) this_packet);
 
     schedule_end_packet_on_channel_event(simulation_run,
-               now + 1/Service_Rate,
+               now + (1.0/(Service_Rate)),
                (void *) channel);
   }
 }

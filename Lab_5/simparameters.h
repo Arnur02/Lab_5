@@ -40,14 +40,14 @@
 #define Bucket_Output_Rate 1000
 #define Bucket_Output_Rates 5, 10, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000
 #define Mean_Host_Output_Rate 100
-#define Service_Rate 1/Clock_tick_duration // cycle/second
-#define Clock_tick_duration 1 // second
-
-#define RUNLENGTH 5e5 /* number of successful calls */
+#define Service_Rate (1.0/(Clock_tick_duration)) // cycle/second
+#define Clock_tick_duration 0.001 // second
+#define COUNTER_INTIAL 100
+#define RUNLENGTH 5e4 /* number of successful calls */
 #define BLIPRATE 1e3
 
 /* Comma separated list of random seeds to run. */
-#define RANDOM_SEED_LIST 333, 4444, 55555
+#define RANDOM_SEED_LIST 400310269, 400373330
 
 /*******************************************************************************/
 

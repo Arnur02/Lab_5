@@ -86,7 +86,7 @@ packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
     new_packet->channel = free_channel;
 
     schedule_end_packet_on_channel_event(simulation_run,
-				       now + 1/Service_Rate,
+				       now + 1.0/(Service_Rate),
 				       (void *) free_channel);
   } else if(bucket_queue->size < sim_data->queue_size) {
     new_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
@@ -99,7 +99,7 @@ packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
 
   /* Schedule the next call arrival. */
   schedule_packet_arrival_event(simulation_run,
-	      now + exponential_generator((double) 1/Mean_Host_Output_Rate));
+	      now + exponential_generator((double) 1/(Mean_Host_Output_Rate)));
 }
 
 /*******************************************************************************/
