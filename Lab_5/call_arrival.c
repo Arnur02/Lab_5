@@ -62,9 +62,16 @@ void
 packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
 {
   Packet_Ptr new_packet;
-  Channel_Ptr free_channel;
+  
+  Channel_Ptr my_channel;
+  my_channel = get_free_channel(simulation_run);
   Simulation_Run_Data_Ptr sim_data;
   double now;
+
+  new_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
+  new_packet->arrive_time = now;
+  new_packet->size = Packet_Size;
+  int residual_packet_size = my_channel->n - new_packet->size;
 
   now = simulation_run_get_time(simulation_run);
 
@@ -73,11 +80,45 @@ packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
   Fifoqueue_Ptr bucket_queue = sim_data->bucket_queue;
 
   /* See if there is a free channel.*/
-  if((free_channel = get_free_channel(simulation_run)) != NULL) {
+  // if((free_channel = get_free_channel(simulation_run)) != NULL)
+  if( residual_packet_size >= 0)
+   {
+    // We have enough space in my channel to send the whole packet
+        // server_put(my_channel, (void*) new_packet);
+        new_packet->channel = my_channel;
+        schedule_end_packet_on_channel_event(simulation_run,
+                   now + (Bit_Service_Time) * new_packet->size,
+                   (void *) my_channel);
+        my_channel->n -= new_packet->size;
+
+   } else if( residual_packet_size < 0 && my_channel->n > 0) {
+     // I have space in my channel but not enough for the whole packet, so put residual on the queue
+    // server_put(my_channel, (void*) new_packet);
+    new_packet->channel = my_channel;
+    schedule_end_packet_on_channel_event(simulation_run,
+                now + (Bit_Service_Time) * residual_packet_size,
+                (void *) my_channel);
+    my_channel->n -= residual_packet_size;
+    // Create a new packet for the residual and put it on the queue
+    Packet_Ptr residual_packet;
+    residual_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
+    residual_packet->arrive_time = now;
+    residual_packet->size = new_packet->size - residual_packet_size;
+    fifoqueue_put(bucket_queue, (void *) residual_packet);
+
+    } else if (residual_packet_size < 0 && my_channel->n == 0) {
+    // No space in my channel put the whole packet on the queue
+    fifoqueue_put(bucket_queue, (void *) new_packet);
+
+  } else {
+    // No space in my channel and no space on the queue, so block the packet
+    sim_data->blocked_packet_count++;
+  }
+
+
 
     /* Yes, we found one. Allocate some memory and start the call. */
-    new_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
-    new_packet->arrive_time = now;
+
     // new_packet->packet_duration = get_packet_duration();
 
     /* Place the call in the free channel and schedule its
@@ -85,9 +126,6 @@ packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
     server_put(free_channel, (void*) new_packet);
     new_packet->channel = free_channel;
 
-    schedule_end_packet_on_channel_event(simulation_run,
-				       now + 1.0/(Service_Rate),
-				       (void *) free_channel);
   } else if(bucket_queue->size < sim_data->queue_size) {
     new_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
     new_packet->arrive_time = now;
@@ -118,11 +156,15 @@ Channel_Ptr get_free_channel(Simulation_Run_Ptr simulation_run)
   sim_data = simulation_run_data(simulation_run);
   channels = sim_data->channels;
 
-  for (i=0; i<1; i++) {
-    if (server_state(*(channels+i)) == FREE)
-      return *(channels+i);
-  }
-  return (Channel_Ptr) NULL;
+  // for (i=0; i<1; i++) {
+    // if (server_state(*(channels+i)) == FREE)
+  return *(channels+0);
+  // }
+  // for (i=0; i<1; i++) {
+  //   if (server_state(*(channels+i)) == FREE)
+  //     return *(channels+i);
+  // }
+  // return (Channel_Ptr) NULL;
 }
 
 

@@ -35,16 +35,18 @@
 // #define NUMBER_OF_CHANNELS 11
 
 // Our variables
-#define Queue_Size 1
+#define Queue_Size_Bits 1000
 #define Queue_Sizes 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50
 #define Bucket_Output_Rate 1000
 #define Bucket_Output_Rates 5, 10, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000
 #define Mean_Host_Output_Rate 100
-#define Service_Rate (1.0/(Clock_tick_duration)) // cycle/second
+#define Bit_Service_Rate (1e6) // bits/second
+#define Bit_Service_Time (1.0/(Bit_Service_Rate)) // scond/bit
 #define Clock_tick_duration 0.001 // second
-#define COUNTER_INTIAL 100
 #define RUNLENGTH 5e4 /* number of successful calls */
 #define BLIPRATE 1e3
+#define COUNTER_INTIAL 100
+#define Packet_Size 500 // bytes
 
 /* Comma separated list of random seeds to run. */
 #define RANDOM_SEED_LIST 400310269, 400373330

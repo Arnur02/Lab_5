@@ -42,6 +42,7 @@ typedef enum {XMTTING, WAITING} Packet_Status;
 typedef struct _packet_
 {
   double arrive_time;
+  int size;
   // double call_duration;
   Channel_Ptr channel;
 } Packet, * Packet_Ptr;

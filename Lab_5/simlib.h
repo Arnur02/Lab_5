@@ -126,6 +126,7 @@ typedef struct _server_
 {
   Server_State state;
   void * customer_in_service;
+  int n; // this is the maximum number of bits that can be served at one cycle
 } Server, * Server_Ptr;
 
 /******************************************************************************/
