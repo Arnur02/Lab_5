@@ -105,24 +105,60 @@ packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
 /*******************************************************************************/
 
 /*
- * Scan through the channels and return a free one, if possible. Otherwise
- * return NULL.
- */
+* Scan through the channels and return a free one, if possible. Otherwise
+* return NULL.
+*/
 
 Channel_Ptr get_free_channel(Simulation_Run_Ptr simulation_run)
 {
   Channel_Ptr *channels;
   int i;
   Simulation_Run_Data_Ptr sim_data;
-
+  
   sim_data = simulation_run_data(simulation_run);
   channels = sim_data->channels;
-
+  
   for (i=0; i<1; i++) {
     if (server_state(*(channels+i)) == FREE)
-      return *(channels+i);
+    return *(channels+i);
   }
   return (Channel_Ptr) NULL;
 }
 
 
+long int
+schedule_token_arrival_event(Simulation_Run_Ptr simulation_run, double event_time)
+{
+  Event new_event;
+
+  new_event.description = "Token Arrival";
+  new_event.function = token_arrival_event;
+  new_event.attachment = NULL;
+
+  return simulation_run_schedule_event(simulation_run, new_event, event_time);
+}
+
+
+void
+token_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
+{
+  Token_Ptr new_generated_token;
+  Simulation_Run_Data_Ptr sim_data;
+  double now;
+
+  now = simulation_run_get_time(simulation_run);
+  sim_data = simulation_run_data(simulation_run);
+
+  sim_data->token_arrival_count++;
+  sim_data->tokens_used++;
+  Fifoqueue_Ptr token_queue = sim_data->token_queue;
+
+  if(token_queue->size < sim_data->token_queue_size) {
+    new_generated_token = (Token_Ptr) xmalloc(sizeof(Token));
+    new_generated_token->arrive_time = now;
+    fifoqueue_put(sim_data->token_queue, (void *) new_generated_token);
+  }
+  /* Schedule the next token generation. */
+  schedule_token_arrival_event(simulation_run,
+        now  + ((double) 1/(Token_Generation_rate)));
+}

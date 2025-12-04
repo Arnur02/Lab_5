@@ -79,12 +79,16 @@ int main(void)
       // data.accumulated_call_time = 0.0;
       data.random_seed = random_seed;
       data.queue_size = Q_Size;
+      data.token_queue_size = Token_Queue_Size;
+      data.token_arrival_count = 0;
+      data.tokens_used = 0;
 
       /* Create the channels. */
       data.channels = (Channel_Ptr *) xcalloc((int) 1,
                 sizeof(Channel_Ptr));
       
       data.bucket_queue = fifoqueue_new();
+      data.token_queue  = fifoqueue_new();
       /* Initialize the channels. */
       for (i=0; i<1; i++) {
         *(data.channels+i) = server_new(); 
@@ -93,11 +97,16 @@ int main(void)
       /* Set the random number generator seed. */
       random_generator_initialize((unsigned) random_seed);
 
-      /* Schedule the initial call arrival. */
+      /* Schedule the initial packet arrival. */
       schedule_packet_arrival_event(simulation_run,
         simulation_run_get_time(simulation_run) +
         exponential_generator((double) 1/(Mean_Host_Output_Rate)));
-      
+        
+      /* Schedule the initial token arrival. */
+      schedule_token_arrival_event(simulation_run,
+        simulation_run_get_time(simulation_run) + ((double) 1/(Token_Generation_rate)));
+
+
       /* Execute events until we are finished. */
       while(data.number_of_packets_processed < RUNLENGTH) {
         simulation_run_execute_event(simulation_run);

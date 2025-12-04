@@ -46,9 +46,14 @@ get_free_channel(Simulation_Run_Ptr);
 void
 packet_arrival_event(Simulation_Run_Ptr, void *);
 
+void
+token_arrival_event(Simulation_Run_Ptr, void *);
+
 long int
 schedule_packet_arrival_event(Simulation_Run_Ptr, double);
 
+long int
+schedule_token_arrival_event(Simulation_Run_Ptr, double);
 /*******************************************************************************/
 
 #endif /* call_arrival.h */

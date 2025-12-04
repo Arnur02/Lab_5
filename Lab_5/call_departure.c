@@ -63,14 +63,24 @@ void
 end_packet_on_channel_event(Simulation_Run_Ptr simulation_run, void * c_ptr)
 {
   Packet_Ptr this_packet;
+  Token_Ptr this_token;
   Channel_Ptr channel;
   Simulation_Run_Data_Ptr sim_data;
   double now;
-
+  
   channel = (Channel_Ptr) c_ptr;
-
+  
   now = simulation_run_get_time(simulation_run);
   sim_data = simulation_run_data(simulation_run);
+  
+  if (sim_data->token_queue->size < 1){
+    schedule_end_packet_on_channel_event(simulation_run, now + (Clock_tick_duration), c_ptr);
+    return;
+  } 
+
+  this_token = (Token_Ptr) fifoqueue_get(sim_data->token_queue);
+  xfree((void*) this_token);
+
 
   /* Remove the call from the channel.*/
   this_packet = (Packet_Ptr) server_get(channel);
@@ -78,7 +88,8 @@ end_packet_on_channel_event(Simulation_Run_Ptr simulation_run, void * c_ptr)
   TRACE(printf("End Of Packet.\n"););
 
   /* Collect statistics. */
-  sim_data->number_of_packets_processed++;
+  sim_data->number_of_packets_processed++;  
+  
   // sim_data->accumulated_call_time += now - this_call->arrive_time;
 
   output_progress_msg_to_screen(simulation_run);
