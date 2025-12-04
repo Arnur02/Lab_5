@@ -507,7 +507,7 @@ server_new(void)
   server_ptr = (Server_Ptr) xmalloc(sizeof(Server));
   server_ptr->customer_in_service = NULL;
   server_ptr->state = FREE;
-  server_ptr->n = COUNTER_INTIAL; 
+  server_ptr->n = 0; 
   return server_ptr;
 }
 
@@ -705,7 +705,6 @@ xfree(void * ptr)
   }
   else free(ptr);
 }
-
 
 
 

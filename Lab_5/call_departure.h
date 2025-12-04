@@ -30,6 +30,8 @@
 
 /*******************************************************************************/
 
+#include "main.h"
+
 /*
  *
  * Function prototypes
@@ -42,9 +44,20 @@ end_packet_on_channel_event(Simulation_Run_Ptr ThisSimulation_Run, void*);
 long int
 schedule_end_packet_on_channel_event(Simulation_Run_Ptr, double, void*);
 
+void
+start_packet_service(Simulation_Run_Ptr, Packet_Ptr, double);
+
+void
+try_send_from_queue(Simulation_Run_Ptr);
+
+long int
+schedule_bucket_tick_event(Simulation_Run_Ptr, double);
+
+void
+bucket_tick_event(Simulation_Run_Ptr, void*);
+
 /*******************************************************************************/
 
 #endif /* call_departure.h */
-
 
 

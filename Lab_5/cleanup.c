@@ -44,11 +44,17 @@ void cleanup (Simulation_Run_Ptr this_simulation_run)
     if( (*(sim_data->channels+i))->state == BUSY)
       xfree(server_get(*(sim_data->channels+i)));
   }
+
+  /* Drain any remaining packets in the queue. */
+  while(sim_data->bucket_queue->size > 0) {
+    xfree(fifoqueue_get(sim_data->bucket_queue));
+  }
+  xfree(sim_data->bucket_queue);
+
   xfree(sim_data->channels);
 
   /* Clean up the simulation_run. */
   simulation_run_free_memory(this_simulation_run);
 }
-
 
 

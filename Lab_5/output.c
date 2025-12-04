@@ -62,27 +62,44 @@ void output_progress_msg_to_screen(Simulation_Run_Ptr this_simulation_run)
 
 void output_results(Simulation_Run_Ptr this_simulation_run)
 {
-  double xmtted_fraction;
   Simulation_Run_Data_Ptr sim_data;
+  static int header_printed = 0;
 
   sim_data = (Simulation_Run_Data_Ptr) simulation_run_data(this_simulation_run);
 
+  double sim_time = simulation_run_get_time(this_simulation_run);
+  double loss_rate = (sim_data->packet_arrival_count == 0) ? 0.0 :
+    (double)sim_data->blocked_packet_count/(double)sim_data->packet_arrival_count;
+  double throughput_bps = (sim_time == 0) ? 0.0 :
+    ((double) sim_data->total_bits_transmitted / sim_time);
+
   printf("\n");
-  printf("packet loss is %f \n", (double)sim_data->blocked_packet_count/(double)sim_data->packet_arrival_count);
-/* mean output data rate = number of packets processed divided by sim time */
+  printf("tokens_per_tick=%d, tick=%.4f s, line_rate=%.0f bps, queue=%d packets\n",
+    sim_data->tokens_per_tick,
+    sim_data->tick_period,
+    sim_data->line_rate_bps,
+    sim_data->queue_capacity_packets);
+  printf("packet loss is %f \n", loss_rate);
+  printf("mean output data rate is %.3f bps \n", throughput_bps);
 
-  printf("mean output data rate is %f packets/second \n",
-   (double) sim_data->number_of_packets_processed /
-    simulation_run_get_time(this_simulation_run));
   printf("random seed = %d \n", sim_data->random_seed);
-  // printf("call arrival count = %ld \n", sim_data->call_arrival_count);
-  // printf("blocked call count = %ld \n", sim_data->blocked_call_count);
+  printf("number of packets processed = %ld \n",
+   sim_data->number_of_packets_processed);
+  printf("packets arrived = %ld (blocked %ld)\n",
+    sim_data->packet_arrival_count, sim_data->blocked_packet_count);
 
-  // xmtted_fraction = (double) (sim_data->packet_arrival_count -
-  //     sim_data->blocked_packet_count)/sim_data->packet_arrival_count;
-
-  // printf("Blocking probability = %.5f (Service fraction = %.5f)\n",
-	//  1-xmtted_fraction, xmtted_fraction);
-
+  if(!header_printed) {
+    printf("csv_header,seed,line_rate_bps,tokens_per_tick,tick_period,queue_capacity,loss_rate,throughput_bps,sim_time\n");
+    header_printed = 1;
+  }
+  printf("csv,%d,%.0f,%d,%.6f,%d,%.6f,%.3f,%.6f\n",
+    sim_data->random_seed,
+    sim_data->line_rate_bps,
+    sim_data->tokens_per_tick,
+    sim_data->tick_period,
+    sim_data->queue_capacity_packets,
+    loss_rate,
+    throughput_bps,
+    sim_time);
   printf("\n");
 }

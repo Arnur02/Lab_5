@@ -43,7 +43,6 @@ typedef struct _packet_
 {
   double arrive_time;
   int size;
-  // double call_duration;
   Channel_Ptr channel;
 } Packet, * Packet_Ptr;
 
@@ -56,8 +55,11 @@ typedef struct _simulation_run_data_
   long int packets_processed;
   long int blocked_packet_count;
   long int number_of_packets_processed;
-  int queue_size;
-  // double accumulated_call_time;
+  long int total_bits_transmitted;
+  int queue_capacity_packets;
+  int tokens_per_tick;
+  double tick_period;
+  double line_rate_bps;
   unsigned random_seed;
 } Simulation_Run_Data, * Simulation_Run_Data_Ptr;
 
@@ -72,7 +74,6 @@ extern int main(void);
 /*******************************************************************************/
 
 #endif /* main.h */
-
 
 
 
