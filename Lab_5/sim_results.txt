@@ -1,0 +1,1331 @@
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=1
+packet loss is 0.493165 
+mean output data rate is 9.960151 packets/second 
+sim time = 100.4001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=1,loss=0.493165,throughput=9.960151,time=100.400087,arrivals=1975,blocked=974
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=1
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=1,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=1
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=1,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=1
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=1,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=1
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=1,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=1
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=1,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=1
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=1,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=1
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=1,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=1
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=1,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=1
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=1,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 1...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=1
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=1,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=5
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=5,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=5
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=5,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=5
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=5,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=5
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=5,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=5
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=5,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=5
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=5,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=5
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=5,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=5
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=5,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=5
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=5,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=5
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=5,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 5...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=5
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=5,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=10
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=10,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=10
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=10,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=10
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=10,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=10
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=10,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=10
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=10,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=10
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=10,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=10
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=10,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=10
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=10,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=10
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=10,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=10
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=10,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 10...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=10
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=10,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=15
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=15,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=15
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=15,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=15
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=15,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=15
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=15,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=15
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=15,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=15
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=15,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=15
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=15,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=15
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=15,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=15
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=15,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=15
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=15,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 15...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=15
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=15,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=20
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=20,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=20
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=20,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=20
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=20,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=20
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=20,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=20
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=20,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=20
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=20,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=20
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=20,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=20
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=20,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=20
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=20,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=20
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=20,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 20...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=20
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=20,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=25
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=25,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=25
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=25,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=25
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=25,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=25
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=25,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=25
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=25,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=25
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=25,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=25
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=25,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=25
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=25,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=25
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=25,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=25
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=25,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 25...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=25
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=25,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=30
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=30,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=30
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=30,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=30
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=30,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=30
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=30,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=30
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=30,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=30
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=30,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=30
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=30,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=30
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=30,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=30
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=30,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=30
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=30,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 30...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=30
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=30,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=35
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=35,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=35
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=35,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=35
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=35,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=35
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=35,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=35
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=35,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=35
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=35,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=35
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=35,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=35
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=35,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=35
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=35,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=35
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=35,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 35...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=35
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=35,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=40
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=40,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=40
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=40,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=40
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=40,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=40
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=40,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=40
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=40,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=40
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=40,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=40
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=40,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=40
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=40,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=40
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=40,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=40
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=40,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 40...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=40
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=40,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=45
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=45,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=45
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=45,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=45
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=45,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=45
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=45,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=45
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=45,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=45
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=45,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=45
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=45,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=45
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=45,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=45
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=45,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=45
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=45,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 45...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=45
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=45,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=1, token_queue=50
+packet loss is 0.491103 
+mean output data rate is 9.999991 packets/second 
+sim time = 100.0001 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=50,loss=0.491103,throughput=9.999991,time=100.000087,arrivals=1967,blocked=966
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=5, token_queue=50
+packet loss is 0.489070 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=50,loss=0.489070,throughput=9.999980,time=100.000200,arrivals=1967,blocked=962
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=10, token_queue=50
+packet loss is 0.486528 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=50,loss=0.486528,throughput=9.999980,time=100.000200,arrivals=1967,blocked=957
+
+
+
+Starting simulation run with random seed 400373330, queue size 15 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=15, token_queue=50
+packet loss is 0.483986 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=15,token_queue=50,loss=0.483986,throughput=9.999980,time=100.000200,arrivals=1967,blocked=952
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=20, token_queue=50
+packet loss is 0.481444 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=50,loss=0.481444,throughput=9.999980,time=100.000200,arrivals=1967,blocked=947
+
+
+
+Starting simulation run with random seed 400373330, queue size 25 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=25, token_queue=50
+packet loss is 0.478902 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=25,token_queue=50,loss=0.478902,throughput=9.999980,time=100.000200,arrivals=1967,blocked=942
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=30, token_queue=50
+packet loss is 0.476360 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=50,loss=0.476360,throughput=9.999980,time=100.000200,arrivals=1967,blocked=937
+
+
+
+Starting simulation run with random seed 400373330, queue size 35 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=35, token_queue=50
+packet loss is 0.473818 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=35,token_queue=50,loss=0.473818,throughput=9.999980,time=100.000200,arrivals=1967,blocked=932
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=40, token_queue=50
+packet loss is 0.471276 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=50,loss=0.471276,throughput=9.999980,time=100.000200,arrivals=1967,blocked=927
+
+
+
+Starting simulation run with random seed 400373330, queue size 45 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=45, token_queue=50
+packet loss is 0.468734 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=45,token_queue=50,loss=0.468734,throughput=9.999980,time=100.000200,arrivals=1967,blocked=922
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 50...
+100% Call Count = 1000 
+config: data_queue=50, token_queue=50
+packet loss is 0.466192 
+mean output data rate is 9.999980 packets/second 
+sim time = 100.0002 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=50,loss=0.466192,throughput=9.999980,time=100.000200,arrivals=1967,blocked=917
+

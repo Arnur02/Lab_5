@@ -62,27 +62,35 @@ void output_progress_msg_to_screen(Simulation_Run_Ptr this_simulation_run)
 
 void output_results(Simulation_Run_Ptr this_simulation_run)
 {
-  double xmtted_fraction;
+  double loss_rate;
+  double throughput;
+  double sim_time;
   Simulation_Run_Data_Ptr sim_data;
 
   sim_data = (Simulation_Run_Data_Ptr) simulation_run_data(this_simulation_run);
 
+  sim_time = simulation_run_get_time(this_simulation_run);
+  loss_rate = (double)sim_data->blocked_packet_count/(double)sim_data->packet_arrival_count;
+  throughput = (double) sim_data->number_of_packets_processed / sim_time;
+
   printf("\n");
-  printf("packet loss is %f \n", (double)sim_data->blocked_packet_count/(double)sim_data->packet_arrival_count);
-/* mean output data rate = number of packets processed divided by sim time */
+  printf("config: data_queue=%d, token_queue=%d\n", sim_data->queue_size, sim_data->token_queue_size);
+  printf("packet loss is %f \n", loss_rate);
+  /* mean output data rate = number of packets processed divided by sim time */
 
-  printf("mean output data rate is %f packets/second \n",
-   (double) sim_data->number_of_packets_processed /
-    simulation_run_get_time(this_simulation_run));
+  printf("mean output data rate is %f packets/second \n", throughput);
+  printf("sim time = %.4f seconds\n", sim_time);
   printf("random seed = %d \n", sim_data->random_seed);
-  // printf("call arrival count = %ld \n", sim_data->call_arrival_count);
-  // printf("blocked call count = %ld \n", sim_data->blocked_call_count);
 
-  // xmtted_fraction = (double) (sim_data->packet_arrival_count -
-  //     sim_data->blocked_packet_count)/sim_data->packet_arrival_count;
-
-  // printf("Blocking probability = %.5f (Service fraction = %.5f)\n",
-	//  1-xmtted_fraction, xmtted_fraction);
+  /* Single line format for easier parsing later. */
+  printf("RESULT,data_queue=%d,token_queue=%d,loss=%.6f,throughput=%.6f,time=%.6f,arrivals=%ld,blocked=%ld\n",
+    sim_data->queue_size,
+    sim_data->token_queue_size,
+    loss_rate,
+    throughput,
+    sim_time,
+    sim_data->packet_arrival_count,
+    sim_data->blocked_packet_count);
 
   printf("\n");
 }

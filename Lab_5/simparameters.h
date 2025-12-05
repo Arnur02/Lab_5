@@ -36,30 +36,30 @@
 
 // Our variables
 #define Queue_Size 100
-#define Queue_Sizes 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50
-#define Token_Queue_Sizes 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50
+#define Queue_Sizes 1, 5, 10, 20, 30, 40, 50
+#define Token_Queue_Sizes 8000, 12000, 16000, 20000, 24000, 32000
 #define Bucket_Output_Rate 100
 
 #define Bucket_Output_Rates 5, 10, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000
 
-
-#define Token_Queue_Size 100
-#define Token_Generation_rate 10//   tokens/second
-#define Mean_Host_Output_Rate 20
+/* Bit-based token bucket parameters */
+#define PACKET_SIZE_BITS 8000          /* fixed packet size for part (b) */
+#define TOKEN_CHUNK_BITS 1000          /* bits added each token arrival */
+#define Token_Queue_Size 8000          /* default token bucket capacity in bits */
+#define Token_Generation_rate 120      /* token arrivals per second */
+#define Mean_Host_Output_Rate 20       /* packets per second */
 
 #define Service_Rate (1.0/(Clock_tick_duration)) // cycle/second
 #define Clock_tick_duration 0.001 // second
 #define COUNTER_INTIAL 100
-#define RUNLENGTH 1000 /* number of successful calls */
+#define RUNLENGTH 10e3 /* number of successful calls */
 #define BLIPRATE 1e3
 
 /* Comma separated list of random seeds to run. */
-#define RANDOM_SEED_LIST 400310269, 400373330
+#define RANDOM_SEED_LIST 400373330
 
 /*******************************************************************************/
 
 #endif /* simparameters.h */
-
-
 
 

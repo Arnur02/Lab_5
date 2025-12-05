@@ -78,6 +78,7 @@ packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
     /* Yes, we found one. Allocate some memory and start the call. */
     new_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
     new_packet->arrive_time = now;
+    new_packet->size_bits = get_packet_size_bits();
     // new_packet->packet_duration = get_packet_duration();
 
     /* Place the call in the free channel and schedule its
@@ -91,6 +92,7 @@ packet_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
   } else if(bucket_queue->size < sim_data->queue_size) {
     new_packet = (Packet_Ptr) xmalloc(sizeof(Packet));
     new_packet->arrive_time = now;
+    new_packet->size_bits = get_packet_size_bits();
     fifoqueue_put(bucket_queue, (void *) new_packet);
   } else {
     /* No free channel was found. The call is blocked. */
@@ -142,7 +144,6 @@ schedule_token_arrival_event(Simulation_Run_Ptr simulation_run, double event_tim
 void
 token_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
 {
-  Token_Ptr new_generated_token;
   Simulation_Run_Data_Ptr sim_data;
   double now;
 
@@ -150,13 +151,12 @@ token_arrival_event(Simulation_Run_Ptr simulation_run, void * ptr)
   sim_data = simulation_run_data(simulation_run);
 
   sim_data->token_arrival_count++;
-  sim_data->tokens_used++;
-  Fifoqueue_Ptr token_queue = sim_data->token_queue;
-
-  if(token_queue->size < sim_data->token_queue_size) {
-    new_generated_token = (Token_Ptr) xmalloc(sizeof(Token));
-    new_generated_token->arrive_time = now;
-    fifoqueue_put(sim_data->token_queue, (void *) new_generated_token);
+  if(sim_data->tokens_in_bucket < sim_data->token_queue_size) {
+    int new_level = sim_data->tokens_in_bucket + TOKEN_CHUNK_BITS;
+    if(new_level > sim_data->token_queue_size) {
+      new_level = sim_data->token_queue_size;
+    }
+    sim_data->tokens_in_bucket = new_level;
   }
   /* Schedule the next token generation. */
   schedule_token_arrival_event(simulation_run,

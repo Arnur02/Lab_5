@@ -42,7 +42,7 @@ typedef enum {XMTTING, WAITING} Packet_Status;
 typedef struct _packet_
 {
   double arrive_time;
-  // double call_duration;
+  int size_bits;
   Channel_Ptr channel;
 } Packet, * Packet_Ptr;
 
@@ -56,7 +56,6 @@ typedef struct _simulation_run_data_
 {
   Channel_Ptr * channels;
   Fifoqueue_Ptr bucket_queue;
-  Fifoqueue_Ptr token_queue;
   long int blip_counter;
   long int packet_arrival_count;
   long int packets_processed;
@@ -64,8 +63,9 @@ typedef struct _simulation_run_data_
   long int number_of_packets_processed;
   int queue_size;
   int token_queue_size;
+  int tokens_in_bucket;
   unsigned token_arrival_count;
-  unsigned tokens_used;
+  long int tokens_used;
   // double accumulated_call_time;
   unsigned random_seed;
 } Simulation_Run_Data, * Simulation_Run_Data_Ptr;
@@ -81,8 +81,6 @@ extern int main(void);
 /*******************************************************************************/
 
 #endif /* main.h */
-
-
 
 
 

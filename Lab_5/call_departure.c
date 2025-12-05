@@ -25,6 +25,7 @@
 
 /*******************************************************************************/
 
+#include <stdlib.h>
 #include <stdio.h>
 
 #include "trace.h"
@@ -63,7 +64,6 @@ void
 end_packet_on_channel_event(Simulation_Run_Ptr simulation_run, void * c_ptr)
 {
   Packet_Ptr this_packet;
-  Token_Ptr this_token;
   Channel_Ptr channel;
   Simulation_Run_Data_Ptr sim_data;
   double now;
@@ -73,13 +73,22 @@ end_packet_on_channel_event(Simulation_Run_Ptr simulation_run, void * c_ptr)
   now = simulation_run_get_time(simulation_run);
   sim_data = simulation_run_data(simulation_run);
   
-  if (sim_data->token_queue->size < 1){
+  /* Peek at the packet in service without removing it yet. */
+  this_packet = (Packet_Ptr) channel->customer_in_service;
+  if (this_packet == NULL) {
+    printf("Error: No packet in service at departure.\n");
+    exit(1);
+  }
+
+  /* Wait until enough tokens (bits) are available to send this packet. */
+  if (sim_data->tokens_in_bucket < this_packet->size_bits){
     schedule_end_packet_on_channel_event(simulation_run, now + (Clock_tick_duration), c_ptr);
     return;
-  } 
+  }
 
-  this_token = (Token_Ptr) fifoqueue_get(sim_data->token_queue);
-  xfree((void*) this_token);
+  /* Consume the needed tokens. */
+  sim_data->tokens_in_bucket -= this_packet->size_bits;
+  sim_data->tokens_used += this_packet->size_bits;
 
 
   /* Remove the call from the channel.*/
@@ -110,5 +119,3 @@ end_packet_on_channel_event(Simulation_Run_Ptr simulation_run, void * c_ptr)
                (void *) channel);
   }
 }
-
-

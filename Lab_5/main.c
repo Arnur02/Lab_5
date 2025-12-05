@@ -42,6 +42,7 @@ int main(void)
   int i;
   int j=0;
   int k=0;
+  int t=0;
 
   Simulation_Run_Ptr simulation_run;
   Simulation_Run_Data data; /* Simulation_Run_Data is defined in main.h. */
@@ -52,80 +53,82 @@ int main(void)
 
   unsigned RANDOM_SEEDS[] = {RANDOM_SEED_LIST, 0};
   unsigned Q_Sizes[] = {Queue_Sizes, 0};
+  unsigned TQ_Sizes[] = {Token_Queue_Sizes, 0};
   unsigned random_seed;
   unsigned Q_Size;
+  unsigned TQ_Size;
   
   /* 
    * Loop for each random number generator seed, doing a separate
    * simulation_run run for each.
    */
   while (((random_seed = RANDOM_SEEDS[j++]) != 0)){
-    k = 0;
-    while ((Q_Size = Q_Sizes[k++]) != 0) {
-      printf("\n\nStarting simulation run with random seed %u and queue size %u...\n",
-       random_seed, Q_Size);
-      /* Create a new simulation_run. This gives a clock and eventlist. */
-      simulation_run = simulation_run_new();
+    t = 0;
+    while ((TQ_Size = TQ_Sizes[t++]) != 0) {
+      k = 0;
+      while ((Q_Size = Q_Sizes[k++]) != 0) {
+        printf("\n\nStarting simulation run with random seed %u, queue size %u and token queue size %u...\n",
+         random_seed, Q_Size, TQ_Size);
+        /* Create a new simulation_run. This gives a clock and eventlist. */
+        simulation_run = simulation_run_new();
 
-      /* Add our data definitions to the simulation_run. */
-      simulation_run_set_data(simulation_run, (void *) & data);
+        /* Add our data definitions to the simulation_run. */
+        simulation_run_set_data(simulation_run, (void *) & data);
 
-      /* Initialize our simulation_run data variables. */
-      data.blip_counter = 0;
-      data.packet_arrival_count = 0;
-      data.packets_processed = 0;
-      data.blocked_packet_count = 0;
-      data.number_of_packets_processed = 0;
-      // data.accumulated_call_time = 0.0;
-      data.random_seed = random_seed;
-      data.queue_size = Q_Size;
-      data.token_queue_size = Token_Queue_Size;
-      data.token_arrival_count = 0;
-      data.tokens_used = 0;
+        /* Initialize our simulation_run data variables. */
+        data.blip_counter = 0;
+        data.packet_arrival_count = 0;
+        data.packets_processed = 0;
+        data.blocked_packet_count = 0;
+        data.number_of_packets_processed = 0;
+        // data.accumulated_call_time = 0.0;
+        data.random_seed = random_seed;
+        data.queue_size = Q_Size;
+        data.token_queue_size = TQ_Size;
+        data.tokens_in_bucket = TQ_Size; /* start full */
+        data.token_arrival_count = 0;
+        data.tokens_used = 0;
 
-      /* Create the channels. */
-      data.channels = (Channel_Ptr *) xcalloc((int) 1,
-                sizeof(Channel_Ptr));
-      
-      data.bucket_queue = fifoqueue_new();
-      data.token_queue  = fifoqueue_new();
-      /* Initialize the channels. */
-      for (i=0; i<1; i++) {
-        *(data.channels+i) = server_new(); 
-      }
-
-      /* Set the random number generator seed. */
-      random_generator_initialize((unsigned) random_seed);
-
-      /* Schedule the initial packet arrival. */
-      schedule_packet_arrival_event(simulation_run,
-        simulation_run_get_time(simulation_run) +
-        exponential_generator((double) 1/(Mean_Host_Output_Rate)));
+        /* Create the channels. */
+        data.channels = (Channel_Ptr *) xcalloc((int) 1,
+                  sizeof(Channel_Ptr));
         
-      /* Schedule the initial token arrival. */
-      schedule_token_arrival_event(simulation_run,
-        simulation_run_get_time(simulation_run) + ((double) 1/(Token_Generation_rate)));
+        data.bucket_queue = fifoqueue_new();
+        /* Initialize the channels. */
+        for (i=0; i<1; i++) {
+          *(data.channels+i) = server_new(); 
+        }
+
+        /* Set the random number generator seed. */
+        random_generator_initialize((unsigned) random_seed);
+
+        /* Schedule the initial packet arrival. */
+        schedule_packet_arrival_event(simulation_run,
+          simulation_run_get_time(simulation_run) +
+          exponential_generator((double) 1/(Mean_Host_Output_Rate)));
+          
+        /* Schedule the initial token arrival. */
+        schedule_token_arrival_event(simulation_run,
+          simulation_run_get_time(simulation_run) + ((double) 1/(Token_Generation_rate)));
 
 
-      /* Execute events until we are finished. */
-      while(data.number_of_packets_processed < RUNLENGTH) {
-        simulation_run_execute_event(simulation_run);
+        /* Execute events until we are finished. */
+        while(data.number_of_packets_processed < RUNLENGTH) {
+          simulation_run_execute_event(simulation_run);
+        }
+        
+        /* Print out some results. */
+        output_results(simulation_run);
+
+        /* Clean up memory. */
+        cleanup(simulation_run);
       }
-      
-      /* Print out some results. */
-      output_results(simulation_run);
-
-      /* Clean up memory. */
-      cleanup(simulation_run);
     }
   }
   /* Pause before finishing. */
   getchar();
   return 0;
 }
-
-
-
 
 
 

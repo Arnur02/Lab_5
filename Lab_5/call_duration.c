@@ -35,5 +35,9 @@ double get_call_duration(void)
   return 1;
 }
 
-
+int get_packet_size_bits(void)
+{
+  /* Fixed-size packets for part (b). */
+  return PACKET_SIZE_BITS;
+}
 

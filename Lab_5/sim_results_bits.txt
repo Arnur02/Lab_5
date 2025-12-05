@@ -1,0 +1,462 @@
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 8000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=1, token_queue=8000
+packet loss is 0.304036 
+mean output data rate is 13.945695 packets/second 
+sim time = 717.0672 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=8000,loss=0.304036,throughput=13.945695,time=717.067151,arrivals=14370,blocked=4369
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 8000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=5, token_queue=8000
+packet loss is 0.255525 
+mean output data rate is 14.915153 packets/second 
+sim time = 670.4591 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=8000,loss=0.255525,throughput=14.915153,time=670.459104,arrivals=13439,blocked=3434
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 8000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=10, token_queue=8000
+packet loss is 0.251458 
+mean output data rate is 14.997361 packets/second 
+sim time = 666.7840 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=8000,loss=0.251458,throughput=14.997361,time=666.783963,arrivals=13370,blocked=3362
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 8000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=20, token_queue=8000
+packet loss is 0.250711 
+mean output data rate is 14.997356 packets/second 
+sim time = 666.7842 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=8000,loss=0.250711,throughput=14.997356,time=666.784200,arrivals=13370,blocked=3352
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 8000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=30, token_queue=8000
+packet loss is 0.249963 
+mean output data rate is 14.997356 packets/second 
+sim time = 666.7842 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=8000,loss=0.249963,throughput=14.997356,time=666.784200,arrivals=13370,blocked=3342
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 8000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=40, token_queue=8000
+packet loss is 0.249215 
+mean output data rate is 14.997356 packets/second 
+sim time = 666.7842 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=8000,loss=0.249215,throughput=14.997356,time=666.784200,arrivals=13370,blocked=3332
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 8000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=50, token_queue=8000
+packet loss is 0.248467 
+mean output data rate is 14.997356 packets/second 
+sim time = 666.7842 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=8000,loss=0.248467,throughput=14.997356,time=666.784200,arrivals=13370,blocked=3322
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 12000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=1, token_queue=12000
+packet loss is 0.286306 
+mean output data rate is 14.275499 packets/second 
+sim time = 700.5009 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=12000,loss=0.286306,throughput=14.275499,time=700.500905,arrivals=14013,blocked=4012
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 12000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=5, token_queue=12000
+packet loss is 0.254398 
+mean output data rate is 14.938927 packets/second 
+sim time = 669.3921 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=12000,loss=0.254398,throughput=14.938927,time=669.392104,arrivals=13416,blocked=3413
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 12000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=10, token_queue=12000
+packet loss is 0.251384 
+mean output data rate is 14.998125 packets/second 
+sim time = 666.7500 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=12000,loss=0.251384,throughput=14.998125,time=666.750020,arrivals=13370,blocked=3361
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 12000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=20, token_queue=12000
+packet loss is 0.250636 
+mean output data rate is 14.998121 packets/second 
+sim time = 666.7502 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=12000,loss=0.250636,throughput=14.998121,time=666.750200,arrivals=13370,blocked=3351
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 12000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=30, token_queue=12000
+packet loss is 0.249888 
+mean output data rate is 14.998121 packets/second 
+sim time = 666.7502 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=12000,loss=0.249888,throughput=14.998121,time=666.750200,arrivals=13370,blocked=3341
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 12000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=40, token_queue=12000
+packet loss is 0.249140 
+mean output data rate is 14.998121 packets/second 
+sim time = 666.7502 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=12000,loss=0.249140,throughput=14.998121,time=666.750200,arrivals=13370,blocked=3331
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 12000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=50, token_queue=12000
+packet loss is 0.248392 
+mean output data rate is 14.998121 packets/second 
+sim time = 666.7502 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=12000,loss=0.248392,throughput=14.998121,time=666.750200,arrivals=13370,blocked=3321
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 16000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=1, token_queue=16000
+packet loss is 0.277019 
+mean output data rate is 14.461307 packets/second 
+sim time = 691.5004 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=16000,loss=0.277019,throughput=14.461307,time=691.500408,arrivals=13833,blocked=3832
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 16000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=5, token_queue=16000
+packet loss is 0.253619 
+mean output data rate is 14.955862 packets/second 
+sim time = 668.6341 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=16000,loss=0.253619,throughput=14.955862,time=668.634144,arrivals=13402,blocked=3399
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 16000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=10, token_queue=16000
+packet loss is 0.251384 
+mean output data rate is 14.998868 packets/second 
+sim time = 666.7170 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=16000,loss=0.251384,throughput=14.998868,time=666.716963,arrivals=13370,blocked=3361
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 16000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=20, token_queue=16000
+packet loss is 0.250636 
+mean output data rate is 14.998859 packets/second 
+sim time = 666.7174 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=16000,loss=0.250636,throughput=14.998859,time=666.717371,arrivals=13370,blocked=3351
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 16000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=30, token_queue=16000
+packet loss is 0.249888 
+mean output data rate is 14.998859 packets/second 
+sim time = 666.7174 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=16000,loss=0.249888,throughput=14.998859,time=666.717371,arrivals=13370,blocked=3341
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 16000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=40, token_queue=16000
+packet loss is 0.249140 
+mean output data rate is 14.998859 packets/second 
+sim time = 666.7174 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=16000,loss=0.249140,throughput=14.998859,time=666.717371,arrivals=13370,blocked=3331
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 16000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=50, token_queue=16000
+packet loss is 0.248392 
+mean output data rate is 14.998859 packets/second 
+sim time = 666.7174 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=16000,loss=0.248392,throughput=14.998859,time=666.717371,arrivals=13370,blocked=3321
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 20000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=1, token_queue=20000
+packet loss is 0.270020 
+mean output data rate is 14.631013 packets/second 
+sim time = 683.4797 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=20000,loss=0.270020,throughput=14.631013,time=683.479660,arrivals=13699,blocked=3699
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 20000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=5, token_queue=20000
+packet loss is 0.252913 
+mean output data rate is 14.968556 packets/second 
+sim time = 668.0671 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=20000,loss=0.252913,throughput=14.968556,time=668.067104,arrivals=13388,blocked=3386
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 20000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=10, token_queue=20000
+packet loss is 0.251309 
+mean output data rate is 14.999610 packets/second 
+sim time = 666.6840 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=20000,loss=0.251309,throughput=14.999610,time=666.684020,arrivals=13370,blocked=3360
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 20000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=20, token_queue=20000
+packet loss is 0.250561 
+mean output data rate is 14.999624 packets/second 
+sim time = 666.6834 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=20000,loss=0.250561,throughput=14.999624,time=666.683371,arrivals=13370,blocked=3350
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 20000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=30, token_queue=20000
+packet loss is 0.249813 
+mean output data rate is 14.999624 packets/second 
+sim time = 666.6834 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=20000,loss=0.249813,throughput=14.999624,time=666.683371,arrivals=13370,blocked=3340
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 20000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=40, token_queue=20000
+packet loss is 0.249065 
+mean output data rate is 14.999624 packets/second 
+sim time = 666.6834 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=20000,loss=0.249065,throughput=14.999624,time=666.683371,arrivals=13370,blocked=3330
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 20000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=50, token_queue=20000
+packet loss is 0.248317 
+mean output data rate is 14.999624 packets/second 
+sim time = 666.6834 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=20000,loss=0.248317,throughput=14.999624,time=666.683371,arrivals=13370,blocked=3320
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 24000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=1, token_queue=24000
+packet loss is 0.265443 
+mean output data rate is 14.730234 packets/second 
+sim time = 678.8759 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=24000,loss=0.265443,throughput=14.730234,time=678.875862,arrivals=13615,blocked=3614
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 24000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=5, token_queue=24000
+packet loss is 0.252578 
+mean output data rate is 14.978263 packets/second 
+sim time = 667.6341 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=24000,loss=0.252578,throughput=14.978263,time=667.634144,arrivals=13382,blocked=3380
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 24000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=10, token_queue=24000
+packet loss is 0.251309 
+mean output data rate is 15.000353 packets/second 
+sim time = 666.6510 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=24000,loss=0.251309,throughput=15.000353,time=666.650963,arrivals=13370,blocked=3360
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 24000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=20, token_queue=24000
+packet loss is 0.250561 
+mean output data rate is 15.000373 packets/second 
+sim time = 666.6501 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=24000,loss=0.250561,throughput=15.000373,time=666.650089,arrivals=13370,blocked=3350
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 24000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=30, token_queue=24000
+packet loss is 0.249813 
+mean output data rate is 15.000373 packets/second 
+sim time = 666.6501 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=24000,loss=0.249813,throughput=15.000373,time=666.650089,arrivals=13370,blocked=3340
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 24000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=40, token_queue=24000
+packet loss is 0.249065 
+mean output data rate is 15.000373 packets/second 
+sim time = 666.6501 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=24000,loss=0.249065,throughput=15.000373,time=666.650089,arrivals=13370,blocked=3330
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 24000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=50, token_queue=24000
+packet loss is 0.248317 
+mean output data rate is 15.000373 packets/second 
+sim time = 666.6501 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=24000,loss=0.248317,throughput=15.000373,time=666.650089,arrivals=13370,blocked=3320
+
+
+
+Starting simulation run with random seed 400373330, queue size 1 and token queue size 32000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=1, token_queue=32000
+packet loss is 0.259350 
+mean output data rate is 14.852216 packets/second 
+sim time = 673.3002 seconds
+random seed = 400373330 
+RESULT,data_queue=1,token_queue=32000,loss=0.259350,throughput=14.852216,time=673.300220,arrivals=13503,blocked=3502
+
+
+
+Starting simulation run with random seed 400373330, queue size 5 and token queue size 32000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=5, token_queue=32000
+packet loss is 0.252056 
+mean output data rate is 14.991736 packets/second 
+sim time = 667.0341 seconds
+random seed = 400373330 
+RESULT,data_queue=5,token_queue=32000,loss=0.252056,throughput=14.991736,time=667.034144,arrivals=13374,blocked=3371
+
+
+
+Starting simulation run with random seed 400373330, queue size 10 and token queue size 32000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=10, token_queue=32000
+packet loss is 0.251272 
+mean output data rate is 15.001861 packets/second 
+sim time = 666.5840 seconds
+random seed = 400373330 
+RESULT,data_queue=10,token_queue=32000,loss=0.251272,throughput=15.001861,time=666.583963,arrivals=13368,blocked=3359
+
+
+
+Starting simulation run with random seed 400373330, queue size 20 and token queue size 32000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=20, token_queue=32000
+packet loss is 0.250524 
+mean output data rate is 15.001860 packets/second 
+sim time = 666.5840 seconds
+random seed = 400373330 
+RESULT,data_queue=20,token_queue=32000,loss=0.250524,throughput=15.001860,time=666.584020,arrivals=13368,blocked=3349
+
+
+
+Starting simulation run with random seed 400373330, queue size 30 and token queue size 32000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=30, token_queue=32000
+packet loss is 0.249776 
+mean output data rate is 15.001860 packets/second 
+sim time = 666.5840 seconds
+random seed = 400373330 
+RESULT,data_queue=30,token_queue=32000,loss=0.249776,throughput=15.001860,time=666.584020,arrivals=13368,blocked=3339
+
+
+
+Starting simulation run with random seed 400373330, queue size 40 and token queue size 32000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=40, token_queue=32000
+packet loss is 0.249028 
+mean output data rate is 15.001860 packets/second 
+sim time = 666.5840 seconds
+random seed = 400373330 
+RESULT,data_queue=40,token_queue=32000,loss=0.249028,throughput=15.001860,time=666.584020,arrivals=13368,blocked=3329
+
+
+
+Starting simulation run with random seed 400373330, queue size 50 and token queue size 32000...
+ 10% Call Count = 1000  20% Call Count = 2000  30% Call Count = 3000  40% Call Count = 4000  50% Call Count = 5000  60% Call Count = 6000  70% Call Count = 7000  80% Call Count = 8000  90% Call Count = 9000 100% Call Count = 10000 
+config: data_queue=50, token_queue=32000
+packet loss is 0.248279 
+mean output data rate is 15.001860 packets/second 
+sim time = 666.5840 seconds
+random seed = 400373330 
+RESULT,data_queue=50,token_queue=32000,loss=0.248279,throughput=15.001860,time=666.584020,arrivals=13368,blocked=3319
+

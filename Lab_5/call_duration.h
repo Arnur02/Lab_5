@@ -35,17 +35,13 @@
 
 /*******************************************************************************/
 
-/*
- *
- * Function prototypes
- *
- */
+/* Function prototypes */
 
 double get_call_duration(void);
+int get_packet_size_bits(void);
 
 /*******************************************************************************/
 
 #endif /* packetduration.h */
-
 
 
